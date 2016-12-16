@@ -16,8 +16,8 @@ if (typeof f !== "undefined") document.head.appendChild(f);
 var map = new L.amigo.map("map",{amigoLogo: "right"});
 L.amigo.auth.setToken("R:CBcATUWksHyuE8KFWMPeHKIRS5QZMttPKqAboO");
 
-map.addDatasetLayer({url: "https://www.amigocloud.com/api/v1/users/2958/projects/12680/datasets/70285", popup: {displayFields: ["name","pop"]}});
-map.addDatasetLayer({url: "https://www.amigocloud.com/api/v1/users/2958/projects/12680/datasets/70284"});
+var layer1 = map.addDatasetLayer({url: "https://www.amigocloud.com/api/v1/users/2958/projects/12680/datasets/70285", popup: {displayFields: ["name","pop"]}});
+var layer2 = map.addDatasetLayer({url: "https://www.amigocloud.com/api/v1/users/2958/projects/12680/datasets/70284"});
 
 map.fitBounds([[-34.639348299275,-123.02237419423],[56.847071010824,127.798461914062]]);
 setTimeout(function () {
